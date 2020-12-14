@@ -1,0 +1,1 @@
+docker restart dp-devops-jenkins-server

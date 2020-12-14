@@ -15,7 +15,9 @@ docker {
 dockerRun {
     name "${project.name}"
     image "${project.name}:${project.version}"
+    volumes '/var/run/docker.sock': '/var/run/docker.sock'
     ports '8080:8080'
-    clean true
+    clean false
     daemonize false
+    arguments '--privilege -v $(which docker):/usr/bin/docker '
 }

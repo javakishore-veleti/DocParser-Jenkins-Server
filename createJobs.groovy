@@ -15,7 +15,7 @@ pipelineJob('docparser-app-projects') {
                     remote {
                         url 'https://github.com/javakishore-veleti/DocParser.git'
                     }
-                    branch 'master'
+                    branch 'main'
                 }
             }
         }
